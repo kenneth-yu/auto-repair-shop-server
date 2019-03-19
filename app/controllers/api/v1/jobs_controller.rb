@@ -24,6 +24,16 @@ class Api::V1::JobsController < ApplicationController
     end
   end
 
+  def destroy
+    @job = Job.find (params[:id])
+    @job.destroy
+    if @job.valid?
+      render :json=> @job, status: :created
+    else
+      render json: {error: 'failed to delete job'}, status: :not_acceptable
+    end
+  end
+
   private
 
   def job_params

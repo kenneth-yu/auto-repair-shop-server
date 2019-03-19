@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users, only: [:index, :create]
-      resources :jobs , only: [:index, :create, :update]
+      resources :jobs , only: [:index, :create, :update, :destroy]
       resources :customers, only: [:index, :create, :update]
       resources :cars , only: [:index, :create, :update]
       post '/login', to: 'auth#create'
