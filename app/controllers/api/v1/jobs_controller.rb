@@ -10,7 +10,17 @@ class Api::V1::JobsController < ApplicationController
     if @job.valid?
       render :json => @job, status: :created
     else
-      render json: { error: 'failed to create user' }, status: :not_acceptable
+      render json: { error: 'failed to create job' }, status: :not_acceptable
+    end
+  end
+
+  def update
+    @job = Job.find(params[:id])
+    @job.update(job_params)
+    if @job.valid?
+      render :json => @job, status: :created
+    else
+      render json: {error: 'failed to update job'}, status: :not_acceptable
     end
   end
 

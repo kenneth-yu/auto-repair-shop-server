@@ -10,7 +10,17 @@ class Api::V1::CustomersController < ApplicationController
     if @customer.valid?
       render :json => @customer, status: :created
     else
-      render json: { error: 'failed to create user' }, status: :not_acceptable
+      render json: { error: 'failed to create job' }, status: :not_acceptable
+    end
+  end
+
+  def update
+    @customer =  Customer.find(params[:id])
+    @customer.update(customer_params)
+    if @customer.valid?
+      render :json => @customer, status: :created
+    else
+      render json: {error: 'failed to update customer'}, status: :not_acceptable
     end
   end
 
