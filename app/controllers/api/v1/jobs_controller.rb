@@ -17,7 +17,7 @@ class Api::V1::JobsController < ApplicationController
   private
 
   def job_params
-    params.require(:car).permit(:user, :car, :quote, :job_name, :notes, :status)
+    params.require(:job).permit(:user_id, :car_id, :quote, :job_name, :notes, :status)
   end
 
 end
