@@ -16,4 +16,3 @@ Current Features:
 
 * JWT Token 
  
-*...
