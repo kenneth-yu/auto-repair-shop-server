@@ -16,3 +16,4 @@ Current Features:
 
 * JWT Token 
  
+* React/Redux Front-End (https://github.com/kenneth-yu/auto-repair-shop-client/blob/master/README.md)
