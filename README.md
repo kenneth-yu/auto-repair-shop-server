@@ -1,25 +1,20 @@
-# README
+# Auto Repair Shop Back-End
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A business oriented website used by shop owners for keeping track of customers, cars, and their repairs. React and Redux Front-end and Ruby on Rails backend. Solo application - Currently in development.
 
-Things you may want to cover:
+Deployed at: http://auto-repair-shop.herokuapp.com.
+Feel free to create a new account or login using Username: test and Password: test
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+Current Features:
 
-* Database creation
+* Ruby on Rails API Backend
 
-* Database initialization
+* Postgres
 
-* How to run the test suite
+* BCrypt Authentication
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# auto-repair-shop-server
+* JWT Token 
+ 
+* React/Redux Front-End (https://github.com/kenneth-yu/auto-repair-shop-client/blob/master/README.md)
