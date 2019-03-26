@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_14_150108) do
+ActiveRecord::Schema.define(version: 2019_03_25_194727) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2019_03_14_150108) do
     t.integer "customer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "img"
   end
 
   create_table "customers", force: :cascade do |t|
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(version: 2019_03_14_150108) do
     t.integer "balance"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "img"
   end
 
   create_table "jobs", force: :cascade do |t|
@@ -44,6 +46,7 @@ ActiveRecord::Schema.define(version: 2019_03_14_150108) do
     t.boolean "status", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "img"
   end
 
   create_table "users", force: :cascade do |t|
